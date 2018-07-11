@@ -1,0 +1,25 @@
+jQuery(document).ready(function($) {
+
+		$(".flexnav").flexNav({});
+		
+		if ($(window).width() > 1024) {
+			$(".sticky-nav").sticky({topSpacing:0});
+		}
+		
+		//
+		// prevent Gravity Forms form being submitted twice++
+		//
+		 
+		var gformSubmitted = false;
+		 
+		$(".gform_wrapper form").submit(function(event) {
+			if (gformSubmitted) {
+				event.preventDefault();
+			}
+			else {
+				gformSubmitted = true;
+				$("input[type='submit']", this).val("Processing, please wait...");
+			}
+		});
+
+});

@@ -1,0 +1,14 @@
+/*
+Theme Name: 	Areal
+Theme URI: 		http://www.areal.ca
+Description: 	Areal Bespoke Responsive Theme
+Version: 		1.0
+Author: 		Candybox Marketing
+Author URI: 	http://www.candyboxmarketing.com
+Tags: 			Areal Theme, Responsive, Foundation
+*/
+
+
+@import "css/normalize.css";
+@import "css/foundation.min.css";
+@import "css/app.css";
